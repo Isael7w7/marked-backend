@@ -1,7 +1,7 @@
 package com.merida.tecnm.mx.market.backend.domain;
 
 public class Category {
-    private Integer categoryid
+    private Integer categoryid;
     private String category;
     private boolean active;
 
