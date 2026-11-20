@@ -40,4 +40,10 @@ public class ProductService {
         return false;
     }
 
+    public Optional<Product> update(int productId, Product product) {
+        return getProduct(productId).map(existing -> {
+            product.setProductId(productId);
+            return productRepository.save(product);
+        });
+    }
 }
